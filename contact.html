@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TravelICT and book your next adventure">
+    <title>Contact & Booking - TravelICT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌍 TravelICT</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 2rem;">
+        <h1>Contact Us & Book Your Trip</h1>
+        <p>Let's plan your perfect adventure together</p>
+    </section>
+
+    <!-- Contact and Booking Form Section -->
+    <section class="container">
+        <div class="contact-container">
+            <!-- Booking Form -->
+            <div>
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Book Your Travel Package</h2>
+                <div class="success-message"></div>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                        <span class="error-message">Please enter a valid phone number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Select Destination *</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Choose a destination...</option>
+                            <option value="paris">Paris, France</option>
+                            <option value="santorini">Santorini, Greece</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="bali">Bali, Indonesia</option>
+                            <option value="newyork">New York, USA</option>
+                            <option value="dubai">Dubai, UAE</option>
+                            <option value="rome">Rome, Italy</option>
+                            <option value="maldives">Maldives</option>
+                            <option value="barcelona">Barcelona, Spain</option>
+                            <option value="sydney">Sydney, Australia</option>
+                            <option value="iceland">Iceland</option>
+                            <option value="thailand">Thailand</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message">Please select a destination</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departureDate">Departure Date *</label>
+                        <input type="date" id="departureDate" name="departureDate" required>
+                        <span class="error-message">Please select a valid future date</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="returnDate">Return Date *</label>
+                        <input type="date" id="returnDate" name="returnDate" required>
+                        <span class="error-message">Please select a valid return date</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers *</label>
+                        <input type="number" id="travelers" name="travelers" min="1" max="50" required placeholder="1">
+                        <span class="error-message">Please enter number of travelers (1-50)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="packageType">Package Type *</label>
+                        <select id="packageType" name="packageType" required>
+                            <option value="">Select package type...</option>
+                            <option value="budget">Budget Traveler</option>
+                            <option value="standard">Standard Package</option>
+                            <option value="deluxe">Deluxe Package</option>
+                            <option value="luxury">Luxury Experience</option>
+                        </select>
+                        <span class="error-message">Please select a package type</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests (Optional)</label>
+                        <textarea id="specialRequests" name="specialRequests" placeholder="Any special requirements, dietary restrictions, accessibility needs, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Booking Request</button>
+                </form>
+            </div>
+
+            <!-- Map and Contact Info -->
+            <div>
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Visit Our Office</h2>
+                
+                <!-- Contact Information -->
+                <div style="background-color: var(--bg-light); padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📍 Address</h3>
+                        <p style="color: var(--text-light);">123 Travel Street, Adventure City, TC 12345</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📧 Email</h3>
+                        <p style="color: var(--text-light);">info@travelict.com</p>
+                        <p style="color: var(--text-light);">support@travelict.com</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📞 Phone</h3>
+                        <p style="color: var(--text-light);">Main: +1 (555) 123-4567</p>
+                        <p style="color: var(--text-light);">Emergency: +1 (555) 987-6543</p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">🕐 Business Hours</h3>
+                        <p style="color: var(--text-light);">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p style="color: var(--text-light);">Saturday: 10:00 AM - 4:00 PM</p>
+                        <p style="color: var(--text-light);">Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- Interactive Map -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976383964465!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="TravelICT Office Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Options -->
+    <section class="container" style="background-color: var(--bg-light);">
+        <h2 class="section-title">Other Ways to Reach Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Live Chat</h3>
+                <p>Chat with our travel experts in real-time. Available 24/7 for urgent inquiries and booking assistance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>WhatsApp</h3>
+                <p>Message us on WhatsApp at +1 (555) 123-4567 for quick responses and travel updates on the go.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📧</div>
+                <h3>Email Support</h3>
+                <p>Send detailed inquiries to info@travelict.com. We respond within 24 hours during business days.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📞</div>
+                <h3>Call Us</h3>
+                <p>Speak directly with our travel consultants. Emergency support line available 24/7 for travelers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background-color: var(--bg-light); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">How far in advance should I book?</h3>
+                <p style="color: var(--text-light);">We recommend booking 2-3 months in advance for international travel and 1-2 months for domestic trips to secure the best rates and availability.</p>
+            </div>
+            
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background-color: var(--bg-light); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What payment methods do you accept?</h3>
+                <p style="color: var(--text-light);">We accept all major credit cards, debit cards, PayPal, bank transfers, and offer flexible payment plans for bookings over $2,000.</p>
+            </div>
+            
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background-color: var(--bg-light); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Is travel insurance included?</h3>
+                <p style="color: var(--text-light);">Travel insurance is optional but highly recommended. We offer comprehensive travel insurance packages that can be added to your booking.</p>
+            </div>
+            
+            <div style="padding: 1.5rem; background-color: var(--bg-light); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is your cancellation policy?</h3>
+                <p style="color: var(--text-light);">Cancellation terms vary by package. Generally, full refunds are available for cancellations made 60+ days before departure. Contact us for specific details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About TravelICT</h3>
+                <p>Your trusted partner in discovering the world's most amazing destinations. We provide expert travel tips, seamless booking, and unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📧 info@travelict.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 123 Travel Street, Adventure City</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TravelICT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
