@@ -1,234 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore top travel destinations around the world with TravelICT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore top travel destinations around the world with TravelICT"
+    />
     <title>Destinations - TravelICT</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">🌍 TravelICT</a>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+      <div class="nav-container">
+        <a href="index.html" class="logo"
+          ><i class="fas fa-globe"></i> Travel ICT</a
+        >
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 4rem 2rem;">
-        <h1>Top Travel Destinations</h1>
-        <p>Discover amazing places around the world</p>
+    <section class="hero" style="padding: 4rem 2rem">
+      <h1>Top Travel Destinations</h1>
+      <p>Discover amazing places around the world</p>
     </section>
 
     <!-- Search Section -->
-    <section class="container" style="padding-top: 2rem;">
-        <div style="max-width: 600px; margin: 0 auto 3rem;">
-            <input 
-                type="text" 
-                id="destinationSearch" 
-                placeholder="Search destinations..." 
-                style="width: 100%; padding: 1rem; border: 2px solid var(--primary-color); border-radius: 5px; font-size: 1rem;"
-            >
-        </div>
+    <section class="container" style="padding-top: 2rem">
+      <div style="max-width: 600px; margin: 0 auto 3rem">
+        <input
+          type="text"
+          id="destinationSearch"
+          placeholder="Search destinations..."
+          style="
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1rem;
+          "
+        />
+      </div>
     </section>
 
     <!-- Destinations Grid -->
-    <section class="container" style="padding-top: 0;">
-        <div class="destinations-grid">
-            <!-- Paris -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Paris, France">
-                <div class="destination-info">
-                    <h3>Paris, France</h3>
-                    <p>Experience the magic of the Eiffel Tower, Louvre Museum, and charming cafés along the Seine. The City of Light offers romance, art, and world-class cuisine at every corner.</p>
-                    <p class="price">From $1,299</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Santorini -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" alt="Santorini, Greece">
-                <div class="destination-info">
-                    <h3>Santorini, Greece</h3>
-                    <p>Marvel at stunning sunsets from whitewashed cliffside villages. Explore ancient ruins, relax on unique beaches, and savor authentic Greek cuisine with breathtaking views.</p>
-                    <p class="price">From $1,499</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Tokyo -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&h=400&fit=crop" alt="Tokyo, Japan">
-                <div class="destination-info">
-                    <h3>Tokyo, Japan</h3>
-                    <p>Immerse yourself in a vibrant blend of tradition and innovation. Visit ancient temples, explore neon-lit districts, and enjoy world-renowned sushi and ramen.</p>
-                    <p class="price">From $1,799</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Bali -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali, Indonesia">
-                <div class="destination-info">
-                    <h3>Bali, Indonesia</h3>
-                    <p>Discover tropical paradise with stunning beaches, ancient temples, and lush rice terraces. Experience Balinese culture, yoga retreats, and world-class surfing.</p>
-                    <p class="price">From $1,099</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- New York -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop" alt="New York, USA">
-                <div class="destination-info">
-                    <h3>New York, USA</h3>
-                    <p>Experience the city that never sleeps with iconic landmarks like the Statue of Liberty, Times Square, and Central Park. Broadway shows, diverse cuisine, and endless energy await.</p>
-                    <p class="price">From $1,399</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Dubai -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai, UAE">
-                <div class="destination-info">
-                    <h3>Dubai, UAE</h3>
-                    <p>Marvel at futuristic architecture like the Burj Khalifa, enjoy luxury shopping, desert safaris, and pristine beaches. A perfect blend of modern luxury and Arabian culture.</p>
-                    <p class="price">From $1,599</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Rome -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop" alt="Rome, Italy">
-                <div class="destination-info">
-                    <h3>Rome, Italy</h3>
-                    <p>Step back in time at the Colosseum, Vatican City, and Trevi Fountain. Indulge in authentic Italian pizza, pasta, and gelato while exploring ancient Roman history.</p>
-                    <p class="price">From $1,249</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Maldives -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives">
-                <div class="destination-info">
-                    <h3>Maldives</h3>
-                    <p>Escape to paradise with crystal-clear waters, overwater bungalows, and pristine white sand beaches. Perfect for honeymoons, diving, and ultimate relaxation.</p>
-                    <p class="price">From $2,499</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Barcelona -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&h=400&fit=crop" alt="Barcelona, Spain">
-                <div class="destination-info">
-                    <h3>Barcelona, Spain</h3>
-                    <p>Explore Gaudí's masterpieces like Sagrada Familia and Park Güell. Enjoy Mediterranean beaches, vibrant nightlife, and delicious tapas in this artistic coastal city.</p>
-                    <p class="price">From $1,199</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Sydney -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&h=400&fit=crop" alt="Sydney, Australia">
-                <div class="destination-info">
-                    <h3>Sydney, Australia</h3>
-                    <p>Visit the iconic Sydney Opera House and Harbour Bridge. Relax on Bondi Beach, explore the Blue Mountains, and experience Australia's vibrant culture and wildlife.</p>
-                    <p class="price">From $1,899</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Iceland -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=600&h=400&fit=crop" alt="Iceland">
-                <div class="destination-info">
-                    <h3>Iceland</h3>
-                    <p>Witness the Northern Lights, explore glaciers, geysers, and waterfalls. Relax in the Blue Lagoon and experience the land of fire and ice like never before.</p>
-                    <p class="price">From $1,699</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Thailand -->
-            <div class="destination-card">
-                <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop" alt="Thailand">
-                <div class="destination-info">
-                    <h3>Thailand</h3>
-                    <p>Discover golden temples, bustling markets, and stunning islands. Experience Thai hospitality, delicious street food, and beautiful beaches in Phuket and Krabi.</p>
-                    <p class="price">From $999</p>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
+    <section class="container" style="padding-top: 0">
+      <div class="destinations-grid">
+        <!-- Paris -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop"
+            alt="Paris, France"
+          />
+          <div class="destination-info">
+            <h3>Paris, France</h3>
+            <p>
+              Experience the magic of the Eiffel Tower, Louvre Museum, and
+              charming cafés along the Seine. The City of Light offers romance,
+              art, and world-class cuisine at every corner.
+            </p>
+            <p class="price">From $1,299</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
         </div>
+
+        <!-- Santorini -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop"
+            alt="Santorini, Greece"
+          />
+          <div class="destination-info">
+            <h3>Santorini, Greece</h3>
+            <p>
+              Marvel at stunning sunsets from whitewashed cliffside villages.
+              Explore ancient ruins, relax on unique beaches, and savor
+              authentic Greek cuisine with breathtaking views.
+            </p>
+            <p class="price">From $1,499</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Tokyo -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&h=400&fit=crop"
+            alt="Tokyo, Japan"
+          />
+          <div class="destination-info">
+            <h3>Tokyo, Japan</h3>
+            <p>
+              Immerse yourself in a vibrant blend of tradition and innovation.
+              Visit ancient temples, explore neon-lit districts, and enjoy
+              world-renowned sushi and ramen.
+            </p>
+            <p class="price">From $1,799</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Bali -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop"
+            alt="Bali, Indonesia"
+          />
+          <div class="destination-info">
+            <h3>Bali, Indonesia</h3>
+            <p>
+              Discover tropical paradise with stunning beaches, ancient temples,
+              and lush rice terraces. Experience Balinese culture, yoga
+              retreats, and world-class surfing.
+            </p>
+            <p class="price">From $1,099</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- New York -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop"
+            alt="New York, USA"
+          />
+          <div class="destination-info">
+            <h3>New York, USA</h3>
+            <p>
+              Experience the city that never sleeps with iconic landmarks like
+              the Statue of Liberty, Times Square, and Central Park. Broadway
+              shows, diverse cuisine, and endless energy await.
+            </p>
+            <p class="price">From $1,399</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Dubai -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop"
+            alt="Dubai, UAE"
+          />
+          <div class="destination-info">
+            <h3>Dubai, UAE</h3>
+            <p>
+              Marvel at futuristic architecture like the Burj Khalifa, enjoy
+              luxury shopping, desert safaris, and pristine beaches. A perfect
+              blend of modern luxury and Arabian culture.
+            </p>
+            <p class="price">From $1,599</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Rome -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop"
+            alt="Rome, Italy"
+          />
+          <div class="destination-info">
+            <h3>Rome, Italy</h3>
+            <p>
+              Step back in time at the Colosseum, Vatican City, and Trevi
+              Fountain. Indulge in authentic Italian pizza, pasta, and gelato
+              while exploring ancient Roman history.
+            </p>
+            <p class="price">From $1,249</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Maldives -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop"
+            alt="Maldives"
+          />
+          <div class="destination-info">
+            <h3>Maldives</h3>
+            <p>
+              Escape to paradise with crystal-clear waters, overwater bungalows,
+              and pristine white sand beaches. Perfect for honeymoons, diving,
+              and ultimate relaxation.
+            </p>
+            <p class="price">From $2,499</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Barcelona -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&h=400&fit=crop"
+            alt="Barcelona, Spain"
+          />
+          <div class="destination-info">
+            <h3>Barcelona, Spain</h3>
+            <p>
+              Explore Gaudí's masterpieces like Sagrada Familia and Park Güell.
+              Enjoy Mediterranean beaches, vibrant nightlife, and delicious
+              tapas in this artistic coastal city.
+            </p>
+            <p class="price">From $1,199</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Sydney -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&h=400&fit=crop"
+            alt="Sydney, Australia"
+          />
+          <div class="destination-info">
+            <h3>Sydney, Australia</h3>
+            <p>
+              Visit the iconic Sydney Opera House and Harbour Bridge. Relax on
+              Bondi Beach, explore the Blue Mountains, and experience
+              Australia's vibrant culture and wildlife.
+            </p>
+            <p class="price">From $1,899</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Iceland -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=600&h=400&fit=crop"
+            alt="Iceland"
+          />
+          <div class="destination-info">
+            <h3>Iceland</h3>
+            <p>
+              Witness the Northern Lights, explore glaciers, geysers, and
+              waterfalls. Relax in the Blue Lagoon and experience the land of
+              fire and ice like never before.
+            </p>
+            <p class="price">From $1,699</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Thailand -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop"
+            alt="Thailand"
+          />
+          <div class="destination-info">
+            <h3>Thailand</h3>
+            <p>
+              Discover golden temples, bustling markets, and stunning islands.
+              Experience Thai hospitality, delicious street food, and beautiful
+              beaches in Phuket and Krabi.
+            </p>
+            <p class="price">From $999</p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="container" style="text-align: center; background-color: var(--bg-light);">
-        <h2 class="section-title">Can't Find Your Dream Destination?</h2>
-        <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 2rem;">
-            Contact us for personalized travel recommendations and custom packages
-        </p>
-        <a href="contact.html" class="btn">Contact Us</a>
+    <section
+      class="container"
+      style="text-align: center; background-color: var(--bg-light)"
+    >
+      <h2 class="section-title">Can't Find Your Dream Destination?</h2>
+      <p
+        style="
+          font-size: 1.25rem;
+          color: var(--text-light);
+          margin-bottom: 2rem;
+        "
+      >
+        Contact us for personalized travel recommendations and custom packages
+      </p>
+      <a href="contact.html" class="btn">Contact Us</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About TravelICT</h3>
-                <p>Your trusted partner in discovering the world's most amazing destinations. We provide expert travel tips, seamless booking, and unforgettable experiences.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>📧 info@travelict.com</li>
-                    <li>📞 +1 (555) 123-4567</li>
-                    <li>📍 123 Travel Street, Adventure City</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About TravelICT</h3>
+          <p>
+            Your trusted partner in discovering the world's most amazing
+            destinations. We provide expert travel tips, seamless booking, and
+            unforgettable experiences.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 TravelICT. All rights reserved.</p>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> info@travelict.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure
+              City
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelICT. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
